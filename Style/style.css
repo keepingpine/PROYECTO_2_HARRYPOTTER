@@ -55,6 +55,7 @@ body {
     gap: 20px;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
+    background: url("../assets/background-harry.webp") ;
   }
 
   .image-content  {
@@ -93,6 +94,19 @@ body {
   .info-content p {
     margin: 0 0 5px 0;
     line-height: 1em;
+  }
+
+  .house-card {
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    margin-top: 50px;
+  } 
+
+  .houses img {
+    max-width: 184px;
+    max-height: 276px;
   }
 
 
