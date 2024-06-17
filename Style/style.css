@@ -1,3 +1,6 @@
+
+
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -41,8 +44,56 @@ body {
     background-color: #343a40;
     color: white;
     text-align: center;
-    padding: 1em 0;
+    padding: 1em 0;   
     position: fixed;
     width: 100%;
     bottom: 0;
   }
+
+  .grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+  }
+
+  .image-content  {
+    display: flex;
+    justify-content: center;
+    margin: ;
+         
+  }
+
+  .image-content img {
+    max-height: 250px;    
+    max-width: 250px;   
+    border-radius: 6px  ;
+    
+  }
+
+  .card-content {
+    margin: auto;
+    background: no-repeat url("../assets/background-old-styles.jpg");
+    min-height: 380px;
+    max-width: 420px;
+    border-radius: 15px;
+    box-shadow: 9px 10px 85px -4px rgba(0,0,0,0.58);
+  }
+
+  .info-content {
+    font-family: 'Crimson Text', sans-serif;   
+  }
+
+  .info-content h3 {
+    font-family: 'Harry Potter', sans-serif;
+    -webkit-text-stroke: 1px black; /* width and color */
+    color: yellow;
+  }
+
+  .info-content p {
+    margin: 0 0 5px 0;
+    line-height: 1em;
+  }
+
+
+
