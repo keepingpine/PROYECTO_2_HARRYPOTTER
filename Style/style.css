@@ -12,6 +12,7 @@ body {
     background-color: #343a40;
     color: white;
     padding: 1em 0;
+    
   }
   
   nav ul {
@@ -28,11 +29,14 @@ body {
   nav ul li a {
     color: white;
     text-decoration: none;
-  }
-  
-  main {
-    padding: 2em;
+  } 
+
+  main{
     text-align: center;
+  }
+
+  .main-characters {
+    background: url("/assets/background-harry.webp");   
   }
   
   .intro {
@@ -55,7 +59,7 @@ body {
     gap: 20px;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
-    background: url("../assets/background-harry.webp") ;
+    
   }
 
   .image-content  {
@@ -79,9 +83,10 @@ body {
     max-width: 420px;
     border-radius: 15px;
     box-shadow: 9px 10px 85px -4px rgba(0,0,0,0.58);
+    padding-top: 12px;
   }
 
-  .info-content {
+  .info-content { 
     font-family: 'Crimson Text', sans-serif;   
   }
 
@@ -104,10 +109,19 @@ body {
     margin-top: 50px;
   } 
 
-  .houses img {
+  .houses img {    
     max-width: 184px;
     max-height: 276px;
   }
 
+  .characters {
+    background-color:     ;
+  }
+
+  h1 {
+    font-family: 'Harry Potter';
+    font-size: 60px;
+    
+  }  
 
 
