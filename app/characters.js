@@ -1,28 +1,28 @@
 fetch("https://hp-api.onrender.com/api/characters")
-.then((response) => response.json())
+    .then((response) => response.json())
     .then((data) => {
 
-   const $grid = document.querySelector(".grid"); 
-   data.forEach((character) => {
-    //if (character.image) {
-        const card = document.createElement("div");
-        card.classList.add("card");
+        const $grid = document.querySelector(".grid");
+        data.forEach((character) => {
+            //if (character.image) {
+            const card = document.createElement("div");
+            card.classList.add("card");
 
-        let imageSrc = character.image;
-    if (!imageSrc) {       
-        if (character.alive) {
-            imageSrc = "/assets/foto-perfil-generica.png";
-        }else {
-             imageSrc = "/assets/foto-perfil-generica-muerte.png";
-        }
-    }
-        let state;
-        if (character.alive) {
-            state = "Vivo";
-        }else {
-            state = "Muerto";
-        }
-        card.innerHTML =  `
+            let imageSrc = character.image;
+            if (!imageSrc) {
+                if (character.alive) {
+                    imageSrc = "/assets/foto-perfil-generica.png";
+                } else {
+                    imageSrc = "/assets/foto-perfil-generica-muerte.png";
+                }
+            }
+            let state;
+            if (character.alive) {
+                state = "Vivo";
+            } else {
+                state = "Muerto";
+            }
+            card.innerHTML = `
                           <div class = "card-content">                              
                             <div class = "image-content"> 
                                 <img src="${imageSrc}" alt="${character.name}">
@@ -36,8 +36,8 @@ fetch("https://hp-api.onrender.com/api/characters")
                           <div/>       
                           `;
             $grid.appendChild(card);
-        
-    //}
-   });
-})
+
+            //}
+        });
+    })
 
